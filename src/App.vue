@@ -22,6 +22,7 @@ export default {
       return {
         url: image.download_url,
         author: image.author,
+        id: image.id,
       };
     });
   },
