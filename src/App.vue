@@ -16,7 +16,7 @@ export default {
     };
   },
   async created() {
-    const response = await fetch("https://picsum.photos/v2/list?limit=5");
+    const response = await fetch("https://picsum.photos/v2/list?limit=30");
     const data = await response.json();
     this.images = data.map((image) => {
       return {
